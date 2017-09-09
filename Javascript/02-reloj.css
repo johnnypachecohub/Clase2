@@ -1,0 +1,43 @@
+* {
+	box-sizing:  border-box;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+div.mascara {
+	margin: 50px auto;
+	width: 400px;
+	height: 400px;
+	border: 5px solid skyblue;
+	border-radius: 50%;
+	position: relative;  /* para q el segundero tenga un position absolute*/
+}
+
+div.manecilla {
+	position: absolute;
+	transform-origin: left center;
+	transform: rotate(-90deg);
+	top: 192px;   /* error, lo cambie a 200 le quitamos 4 xq el height es 8*/
+	left: 195px;  /* a 200 le quitamos 5 xq el width de 190 se desplazo 10px */
+	height: 8px;
+	transition: transform 1s linear   /* para que no sea brusco el movimiento */
+}
+
+div.manecilla.segundero {
+	width: 190px;
+	background: linear-gradient(red, green);
+}
+
+div.manecilla.minutero {
+	width: 140px;
+	background-color: greenyellow;
+}
+
+div.manecilla.horario {
+	width: 90px;
+	background-color: blueviolet;
+}
