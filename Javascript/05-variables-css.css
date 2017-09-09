@@ -1,0 +1,21 @@
+/* todas las variables son declaradas en root, el "--" es opcional */
+:root {
+	--grayscale: 0%;
+	--blur: 0px;
+	--sepia: 0%;
+	--brillo: 100%;
+	--contraste: 100%;
+}
+
+img {
+	display: block;
+	margin: 20px auto;
+	filter: grayscale(var(--grayscale)) blur(var(--blur)) sepia(var(--sepia)) brightness(var(--brillo)) contrast(var(--contraste));
+	/* para llamar a la variable se usa: var()*/
+}
+
+input {
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 50%;
+}
